@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <main>
+        <button id="formBtn" onclick="toggleForm()">Add a new todo</button>
+        <form>
+            <h5>Add a new todo</h5>
+            <div>
+                <input type="text" name="title" id="title" placeholder="Title">
+            </div>
+            <div>
+                <input type="date" name="date" id="date" placeholder="Deadline">
+            </div>
+            <div>
+                <select name="status" id="status">
+                    <option value="done">Done</option>
+                    <option value="not_started">Not started</option>
+                    <option value="in_progress">In progress</option>
+                </select>
+            </div>
+            <button type="button" id="#btnCancel">Cancel</button>
+            <button type="button" onclick="addItem()" id="addBtn">Add</button>
+            <button type="button" id="saveBtn" onclick="onEdit()">Save</button>
+        </form>
+        <ul></ul>
+        <section>
+        <div class="btnD">Done</div>
+        <div class="btnN">Not started</div>
+        <div class="btnI">In progress</div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
